@@ -1,4 +1,4 @@
-package AStar;
+package Huffman;
 import MinHeap.*;
 
 public class Huffman {
