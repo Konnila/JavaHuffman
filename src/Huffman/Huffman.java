@@ -8,4 +8,9 @@ public class Huffman {
     public Huffman() {
         heap = new Heap(256);
     }
+    
+    
+    public static void main(String[] args) {
+        
+    }
 }
