@@ -1,8 +1,9 @@
 package Huffman;
 
-public class FrequencyTuple implements Comparable<FrequencyTuple>{
+public class FrequencyTuple {
     private char c;
     private int occurrences;
+    private int[] bytes;
 
     public FrequencyTuple(char c) {
         this.c = c;
@@ -28,11 +29,4 @@ public class FrequencyTuple implements Comparable<FrequencyTuple>{
     public void increaseOccurrences() {
         occurrences++;
     }
-
-    @Override
-    public int compareTo(FrequencyTuple o) {
-        //TODO
-        return 1;
-    }
-    
 }

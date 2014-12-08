@@ -1,5 +1,7 @@
 package Huffman;
 
+import java.util.Arrays;
+
 public class FrequencyTable {
     private FrequencyTuple[] charFrequencies;
 
@@ -16,5 +18,11 @@ public class FrequencyTable {
                 charFrequencies[c].increaseOccurrences();
             }
         }
+    }
+    
+    public FrequencyTuple[] sort(boolean byFreq) {
+        Arrays.sort(charFrequencies, new FrequencyTableComparator(byFreq));
+       
+        return charFrequencies;
     }
 }
